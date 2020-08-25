@@ -4,6 +4,11 @@ import java.util.Scanner;
 public class BankingApp {
 
 	public static void main(String[] args) {
+		
+		// create an object
+		
+		BankAccount object1 = new BankAccount("MOhammad", "987654");
+		object1.showMenu();
 
 		
 	}
