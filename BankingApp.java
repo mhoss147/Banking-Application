@@ -7,7 +7,7 @@ public class BankingApp {
 		
 		// create an object
 		
-		BankAccount object1 = new BankAccount("MOhammad", "987654");
+		BankAccount object1 = new BankAccount("Mohammad", "987654");
 		object1.showMenu();
 
 		
@@ -77,29 +77,36 @@ class BankAccount {
 		System.out.println("A. Check balance");
 		System.out.println("B. Deposit");
 		System.out.println("C. Withdraw");
-		System.out.println("Previous transaction");
+		System.out.println("D. Previous transaction");
 		System.out.println("E. Exit");
 		
 		
 		do {
-			
-			System.out.println("Enter an option: ");
+			System.out.println("-----------------------------");
+			System.out.println("Enter an option: " + "\n");
+			System.out.println("-----------------------------");
 			option = scanner.next().charAt(0);
 			
 			switch(option) {
 			
 			case 'A':
+				System.out.println("=====================================================");
 				System.out.println("Balance = " + balance + "\n");
+				System.out.println("=====================================================");
 				break;
 				
 			case 'B':
+				System.out.println("=====================================================");
 				System.out.println("Enter an amount to deposit: " + "\n");
+				System.out.println("=====================================================");
 				int amount = scanner.nextInt();
 				deposit(amount);
 				break;
 				
 			case 'C':
+				System.out.println("=====================================================");
 				System.out.println("Enter an amount to withdraw" + "\n");
+				System.out.println("=====================================================");
 				int amount2 = scanner.nextInt();
 				withdraw(amount2);
 				break;
